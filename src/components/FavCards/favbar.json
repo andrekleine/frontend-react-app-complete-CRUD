@@ -1,0 +1,27 @@
+[
+    {
+      "cat": "Alimentação",
+      "bg": "#E2E200",
+      "font": "#919100"
+    },
+    {
+      "cat": "Entretenimento",
+      "bg": "#FF5959",
+      "font": "#CC0000"
+    },
+    {
+      "cat": "Recreação",
+      "bg": "#54CE52",
+      "font": "#238C21"
+    },
+    {
+      "cat": "Serviços",
+      "bg": "#8C7CFF",
+      "font": "#1D00FF"
+    },
+    {
+      "cat": "Diversos",
+      "bg": "black",
+      "font": "white"
+    }
+  ]

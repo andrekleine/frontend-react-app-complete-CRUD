@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Pacifico";
+    src: url("./Pacifico/Pacifico-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("./Lato/Lato-Regular.ttf");
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+    background-color: #3DC4FC;
+    height: 45px;
+    color: white;
+}
+
+.search-bar {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;    
+}
+
+.form {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit, .form-control {
+    margin-top: 15px;
+}
+
+.favorites {    
+    padding-top: 20px;
+    height: 460px;
+    position: relative;
+}
+
+.wallet {
+    position: absolute;
+    bottom: 0px;
+}
+
+.wallet-text,
+.meus-favoritos {
+    font-family: 'Pacifico', cursive;
+}
+
+.card,
+.search-bar {
+    font-family: 'Lato';
+}
+
+.card {
+    font-size: 28px;    
+}

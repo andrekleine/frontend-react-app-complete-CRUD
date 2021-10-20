@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.one-card, .addresss, .one-rating-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+h5 {
+    font-size: 21px;
+}
+
+.one-container {
+    height: 150px;
+    width: 150px;    
+}
+
+.information {
+    padding: 0;
+    width: 9.5rem;
+    position: relative;    
+}
+
+.one-img {    
+    max-height: 150px;    
+}
+
+.one-rating {
+    position: absolute;
+    left: 2px;
+}
+
+.one-price {
+    position: absolute;
+    left: 2px;
+    top: 45px;
+}
+
+.one-comment {
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+
+.del {
+    position: absolute;
+    bottom: 3px;
+    right: 4px;
+}
+
+.add-comment {
+    position: absolute;
+    bottom: 6px;
+    left: 10px;
+}

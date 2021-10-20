@@ -1,0 +1,25 @@
+.detail-cont {
+    margin-top: 60px;
+}
+
+.detail-card, .detail-body {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;    
+    border: none;
+}
+
+
+.detail-container {
+    max-width: 150px;
+    margin-left: 7px;
+}
+
+.detail-img {    
+    width: 150px;    
+}
+
+.detail-address {
+    margin: 0;
+    padding: 0;
+}

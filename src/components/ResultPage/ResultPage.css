@@ -1,0 +1,16 @@
+p {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.info  {
+
+    display: flex;
+    justify-content: center;
+}
+.insideMap > div{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
