@@ -12,7 +12,7 @@ const UpdateFav = (props) => {
   const handleClick = () => {
     props.onClick();
     axios
-      .put(`https://ironrest.herokuapp.com/meusFavoritos/${props.id}`, comment)
+      .put(`https://ironrest.herokuapp.com/my-favorites/${props.id}`, comment)
       .then(() => {
         history.go(0);
       })
@@ -28,17 +28,17 @@ const UpdateFav = (props) => {
             <Form.Control
               as="textarea"
               rows={3}
-              placeholder="Adicione seu comentário"
+              placeholder="Add your comment"
               onChange={(e) => setComment({...comment , yourComment: e.target.value})}
             />
 
         </Form>
         <Modal.Footer>
           <Button onClick={props.onClick} variant="light">
-            Não quero
+            Nevermind
           </Button>
           <Button onClick={handleClick} variant="danger">
-            Adicionar
+            Add!
           </Button>
         </Modal.Footer>
       </Modal.Dialog>

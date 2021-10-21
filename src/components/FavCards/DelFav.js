@@ -8,7 +8,7 @@ const DelFav = (props) => {
   const handleClick = () => {
     props.onClick();
     axios
-      .delete(`https://ironrest.herokuapp.com/meusFavoritos/${props.id}`)
+      .delete(`https://ironrest.herokuapp.com/my-favorites/${props.id}`)
       .then(() => {
         history.go(0);
       })
@@ -21,14 +21,14 @@ const DelFav = (props) => {
     <div>
       <Modal.Dialog>
         <Modal.Header>
-          <Modal.Title>Você quer mesmo deletar este favorito?</Modal.Title>
+          <Modal.Title>Do you REALLY want to delete this favorite?</Modal.Title>
         </Modal.Header>
         <Modal.Footer>
           <Button onClick={props.onClick} variant="light">
-            Não quero
+            No, I don't.
           </Button>
           <Button onClick={handleClick} variant="danger">
-            Sim, Deletar!
+            Yes, I do. Delete!
           </Button>
         </Modal.Footer>
       </Modal.Dialog>

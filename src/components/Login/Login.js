@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const Login = () => {
-  const [title, setTitle] = useState('Escolha o usuário');
+  const [title, setTitle] = useState('Select user');
 
   const users = [
     "Amarílis",
@@ -43,7 +43,7 @@ const Login = () => {
 
   return (
     <div className="login">
-      <h1>Meus Favoritos</h1>
+      <h1>My Favorites</h1>
       <div className="dropdown"  >
       <div style={{height:'210px', overflow:'auto', width:'190px'}} className="mt-5 user" >
         <DropdownButton 
@@ -62,7 +62,7 @@ const Login = () => {
         <div>
         <button type="button" className="btn btn-primary mt-5 mx-3" style={{height:'40px', width:"100px"}}  >
           <Link to="/home" style={{ textDecoration: "none", color: "white", width:"auto" }}>
-            Entrar
+            Log in!
           </Link>
         </button>
         </div>

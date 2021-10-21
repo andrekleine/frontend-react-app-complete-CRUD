@@ -15,7 +15,7 @@ const AddFav = (props) => {
     category: "",
     venue: props.venue,
   });
-  const [title, setTitle] = useState("Selecione a categoria");
+  const [title, setTitle] = useState("Choose category");
 
   const showModal = () => {
     setIsOpen(true);
@@ -31,27 +31,27 @@ const AddFav = (props) => {
   };
 
   const categories = [
-    "Alimentação",
-    "Entretenimento",
-    "Recreação",
-    "Serviços",
-    "Diversos",
+    "Food",
+    "Entertainment",
+    "Recreation",
+    "Services",
+    "Misc",
   ];
 
   const history = useHistory();
 
   const handleAdd = () => {
     axios
-      .post("https://ironrest.herokuapp.com/meusFavoritos", favObj)
+      .post("https://ironrest.herokuapp.com/my-favorites", favObj)
       .then((response) => {
-        history.push(`/favoritos/${window.name}/${favObj.category}`);
+        history.push(`/favorites/${window.name}/${favObj.category}`);
       })
       .catch((err) => console.error(err));
   };
 
   return (
     <div>
-      <button type="button" className="btn btn-primary" onClick={showModal}>Adicionar aos Favoritos</button>
+      <button type="button" className="btn btn-primary" onClick={showModal}>Add to Favorites !</button>
       <Modal show={isOpen} onHide={hideModal}>
         <Modal.Body>
           <div className="dropdown">
@@ -70,8 +70,8 @@ const AddFav = (props) => {
           </div>
         </Modal.Body>
         <Modal.Footer>
-          <button type="button" className="btn btn-light" onClick={hideModal}>Voltar</button>
-          <button type="button" className="btn btn-success" onClick={handleAdd}>Adicionar!</button>
+          <button type="button" className="btn btn-light" onClick={hideModal}>Back</button>
+          <button type="button" className="btn btn-success" onClick={handleAdd}>Add!</button>
         </Modal.Footer>
       </Modal>
     </div>

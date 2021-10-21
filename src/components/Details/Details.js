@@ -12,8 +12,8 @@ const Details = (props) => {
   const [comments, setComments] = useState([
     {
       id: "123456789-commentID",
-      text: "nenhuma dica aqui ainda",
-      user: { firstName: "seja o primeiro" },
+      text: "No tip here yet!",
+      user: { firstName: "Be the first" },
     },
   ]);
   const [results, setResults] = useState({
@@ -87,8 +87,8 @@ const Details = (props) => {
               : [
                   {
                     id: "123456789-commentID",
-                    text: "nenhuma dica aqui ainda",
-                    user: { firstName: "seja o primeiro" },
+                    text: "No tips here yet",
+                    user: { firstName: "Be the first" },
                   },
                 ],
         });

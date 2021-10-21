@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="navbar fixed-top navbar-light meus-favoritos" style={{display: "flex", justifyContent:"center"}}>
       <Link to="/Home" style={{textDecoration:"none", color:"white"}}>
-        <h2>Meus Favoritos</h2>
+        <h2>My Favorites</h2>
       </Link>
     </nav>
   );

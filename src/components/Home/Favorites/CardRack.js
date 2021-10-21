@@ -5,44 +5,44 @@ const CardRack = () => {
   return (
     <svg width="320" height="350">
       <Card
-        link={`/favoritos/${window.name}/Alimentação`}
+        link={`/favorites/${window.name}/Food`}
         cardY="0"
         cardColor="#E2E200"
         textY="36"
         textColor="#919100"
-        cardName="Alimentação"
+        cardName="Food"
       />
       <Card
-        link={`/favoritos/${window.name}/Entretenimento`}
+        link={`/favorites/${window.name}/Entertainment`}
         cardY="50"
         cardColor="#FF5959"
         textY="86"
         textColor="#CC0000"
-        cardName="Entretenimento"
+        cardName="Entertainment"
       />
       <Card
-        link={`/favoritos/${window.name}/Recreação`}
+        link={`/favorites/${window.name}/Recreation`}
         cardY="100"
         cardColor="#54CE52"
         textY="136"
         textColor="#238C21"
-        cardName="Recreação"
+        cardName="Recreation"
       />
       <Card
-        link={`/favoritos/${window.name}/Serviços`}
+        link={`/favorites/${window.name}/Services`}
         cardY="150"
         cardColor="#8C7CFF"
         textY="186"
         textColor="#1D00FF"
-        cardName="Serviços"
+        cardName="Services"
       />
       <Card
-        link={`/favoritos/${window.name}/Diversos`}
+        link={`/favorites/${window.name}/Misc`}
         cardY="200"
         cardColor="black"
         textY="236"
         textColor="white"
-        cardName="Diversos"
+        cardName="Misc"
       />
     </svg>
   );

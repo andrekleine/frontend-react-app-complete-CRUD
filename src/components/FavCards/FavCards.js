@@ -12,7 +12,7 @@ const FavCards = (props) => {
   useEffect(() => {
     axios
       .get(
-        `https://ironrest.herokuapp.com/findAll/meusFavoritos?user=${user}&category=${category}`
+        `https://ironrest.herokuapp.com/findAll/my-favorites?user=${user}&category=${category}`
       )
       .then((response) => {
         setCollection([...response.data]);
@@ -49,8 +49,8 @@ const FavCards = (props) => {
         ) : (
           <div style={{ margin: "3rem" }}>
             <h1 style={{ fontFamily: "Lato", fontSize: "32px" }}>
-              Você ainda não adicionou favoritos a esta categoria... que tal
-              <Link to="/home"> buscar</Link> algum?
+              You haven't added favorites to this category yet... what about
+              <Link to="/home"> searching</Link> for one?
             </h1>
           </div>
         )}

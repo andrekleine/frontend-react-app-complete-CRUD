@@ -60,14 +60,14 @@ const SearchBar = () => {
 
   return (
     <div className="search-bar">
-      <label>Encontre os melhores produtos e serviços:</label>
+      <label>Find the best products and services :</label>
       <form className="form">
         <input
           type="text"
           className={defineBorderNear(touched.near)}
           id="localidade"
           name="near"
-          placeholder="Localidade"
+          placeholder="City / neighborhood"
           onChange={(e) => setKeyword({ ...keyWord, near: e.target.value })}
           onBlur={handleBlurNear}
         />
@@ -77,7 +77,7 @@ const SearchBar = () => {
           className={defineBorderQuery(touched.query)}
           name="query"
           id="produtoouservico"
-          placeholder="Produto ou serviço"
+          placeholder="Product / service"
           onChange={(e) => setKeyword({ ...keyWord, query: e.target.value })}
           onBlur={handleBlurQuery}
         />
@@ -94,7 +94,7 @@ const SearchBar = () => {
             style={{ width: "100px" }}
             disabled={!keyWord.near.length || !keyWord.query.length}
           >
-            Enviar
+            Search
           </button>
         </Link>
       </form>

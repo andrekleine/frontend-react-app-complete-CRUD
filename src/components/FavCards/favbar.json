@@ -1,26 +1,26 @@
 [
     {
-      "cat": "Alimentação",
+      "cat": "Food",
       "bg": "#E2E200",
       "font": "#919100"
     },
     {
-      "cat": "Entretenimento",
+      "cat": "Entertainment",
       "bg": "#FF5959",
       "font": "#CC0000"
     },
     {
-      "cat": "Recreação",
+      "cat": "Recreation",
       "bg": "#54CE52",
       "font": "#238C21"
     },
     {
-      "cat": "Serviços",
+      "cat": "Services",
       "bg": "#8C7CFF",
       "font": "#1D00FF"
     },
     {
-      "cat": "Diversos",
+      "cat": "Misc",
       "bg": "black",
       "font": "white"
     }
